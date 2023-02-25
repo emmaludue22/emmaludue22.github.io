@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/d68fb36092.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul class="barra" id="barra">
+        <li><a href="#1">Datos Personales</a></li>
+        <li><a href="#2">Historia Académica</a></li>
+        <li><a href="#3">Experiencia Laboral</a></li>
+
+    </ul>
+    <div class="cuerpo">
+        <div class="datos_personales" id="1">
+            <div class="foto" id="foto1">CV</div>
+            <div>
+                <ul>
+                    <li><i class="fa-solid fa-user"></i> Nombre: Olivia Craig</li>
+                    <li><i class="fa-solid fa-envelope"></i> e-mail: olivia.craig@example.com</li>
+                    <li><i class="fa-solid fa-calendar-days"></i> Fecha de nacimiento: 5/06/1995</li>
+                    <li><i class="fa-solid fa-house"></i> Dirección: 6493 James St</li>
+                    <li><i class="fa-solid fa-phone"></i> Teléfono: (261) 566-6207</li>
+                    </ul>
+                
+            </div>
+            <div id="redes">
+                <ul>
+                    <li><i class="fa-brands fa-facebook" onclick="mensajeRedSocial('Facebook')";"></i></li>
+                    <li><i class="fa-brands fa-square-instagram" onclick="mensajeRedSocial('Instagram')"></i></li>
+                    <li><i class="fa-brands fa-linkedin" onclick="mensajeRedSocial('Linkedin')"></i></li>
+                    <li><i class="fa-brands fa-twitter" onclick="mensajeRedSocial('Twitter')"></i></li>
+                    <li><i class="fa-brands fa-square-whatsapp" onclick="mensajeRedSocial('Whatsapp')"></i></li>
+                    </ul>
+                
+            </div>
+            <div>
+                <ul>
+                    <li><button type="button" onclick="ocultarElemento('foto1', 'mostrarFoto', 'ocultarFoto')";" id="ocultarFoto">Ocultar foto</button></li>
+                    <li><button type="button" onclick="mostrarElemento('foto1', 'ocultarFoto', 'mostrarFoto')";" id="mostrarFoto">Mostrar foto</button></li>
+                    <li><button type="button" onclick="mostrarElemento('redes', 'ocultarRedes', 'verRedes')";" id="verRedes">Ver Redes</button></li>
+                    <li><button type="button" onclick="ocultarElemento('redes', 'verRedes', 'ocultarRedes')";" id="ocultarRedes">Ocultar Redes</button></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="historia_academica" id="2">
+            <h2>Historia Académica</h2>
+            <ul>
+                <li><i class="fa-solid fa-school"></i> Nivel Secundario</li>
+                <ul>
+                    <li>Título: Bachiller</li>
+                    <li>Institución: Escuela Normal</li>
+                    <li>Año de egreso: 2013</li>
+                </ul>
+            </ul>
+            <ul>
+                <li><i class="fa-solid fa-school"></i> Nivel Terciario</li>
+                <ul>
+                    <li>Título: Técnica Química</li>
+                    <li>Institución: Instituto San Mateo</li>
+                    <li>Año de egreso: 2017</li>
+                </ul>
+            </ul>
+        </div>
+        <div class="experiencia_laboral" id="3">
+            <h2>Experiencia Laboral</h2>
+            <ul>
+                <li><i class="fa-solid fa-briefcase"></i> Empresa: RETEX</li>
+                <ul>
+                    <li>Cargo: Control de calidad</li>
+                    <li>Año de inicio: 2018</li>
+                    <li>Año de finalización: 2022</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function ocultarElemento(idElemento, idBoton1, idBoton2){
+            document.getElementById(idElemento).style.display = 'none';
+            document.getElementById(idBoton1).style.display = 'block';
+            document.getElementById(idBoton2).style.display = 'none';
+        }
+
+        function mostrarElemento(idElemento, idBoton1, idBoton2){
+            document.getElementById(idElemento).style.display = 'inline-block';
+            document.getElementById(idBoton1).style.display = 'block';
+            document.getElementById(idBoton2).style.display = 'none';
+        }
+
+        function mensajeRedSocial(red){
+            alert('Este enlace llevaría a la red social ' + red);
+        }
+    </script>
+</body>
+</html>

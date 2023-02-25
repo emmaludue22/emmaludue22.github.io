@@ -1,0 +1,100 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: azure;
+    margin: 0px;
+}
+
+h2{
+    font-size: 50px;
+}
+
+li{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+}
+
+.barra{
+    list-style: none;
+    padding: 0;
+    background-color: aquamarine;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.barra li a{
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(177, 15, 142);
+    padding: 17px;
+    display: block;
+    font-size: 27px;
+}
+
+.barra li{
+    display: inline-block;
+    text-align: center;
+}
+
+.barra li a:hover{
+    background-color: rgb(243, 199, 243);
+}
+
+.cuerpo{
+    padding: 20px;
+    padding-top: 4rem;
+    background-color: rgb(208, 248, 235);
+    width: 85%;
+    max-width: 740px;
+    margin: auto;
+}
+
+.datos_personales div{
+    display: inline-block;
+    text-align: center;
+    color: black;
+}
+
+#redes{
+    display: none;
+}
+
+#mostrarFoto{
+    display: none;
+}
+
+#ocultarRedes{
+    display: none;
+}
+
+.datos_personales li{
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+}
+
+.foto {
+    padding-top: 130px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    padding-right: 20px;
+    background-image: url(https://randomuser.me/api/portraits/women/82.jpg);
+    background-repeat: no-repeat;
+    width: 88px;
+    height: 20px;
+    display: none;
+
+}
+
+.historia_academica li{
+    list-style: none;
+}
+
+.experiencia_laboral li{
+    list-style: none;
+}
+
